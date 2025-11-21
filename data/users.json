@@ -2,17 +2,17 @@
   {
     "username": "elrama",
     "password": {
-      "salt": "42322c374eb492c3ab696c0533a150a2",
-      "hash": "6a1a4f8e5bb100473676127f005976e6ab46f8d7f41b2dd5022b2f7d28cafec8"
-    },
-    "role": "visitor"
-  },
-  {
-    "username": "ahmad",
-    "password": {
-      "salt": "39f5be56746334dcf9f65bd45b933aa3",
-      "hash": "ab9460b6ec36380004e7967026f62971df174770f58ad774613cf7705adf9ff0"
+      "salt": "3295e7b8b3ce61a2f5509b8699e0413b",
+      "hash": "e52b0b8da3f7d16841c2472d2b45f4bfb33833c1a0ed35dc3de28ac7357d96d2"
     },
     "role": "organizer"
+  },
+  {
+    "username": "ramael",
+    "password": {
+      "salt": "bd975de6b6dd0f7b0f9e439e148322b0",
+      "hash": "9f5f3466e965d9b05e52578a63a8ef0920c92d7883e47fab2b22434fec235006"
+    },
+    "role": "visitor"
   }
 ]

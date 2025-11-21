@@ -27,7 +27,7 @@ def main_loop():
         print(color_text("0. Quit", Colors.YELLOW))
         choice = input(t["prompt_register_or_login"]).strip()
         if choice == "0":
-            print(color_text("Bye.", Colors.GREEN))
+            print("\n" + color_text(t.get("quit_msg", "Sampai jumpa!"), Colors.GREEN))
             break
         elif choice == "1":
             register_user(t)
@@ -59,10 +59,13 @@ def main_loop():
 
 
 if __name__ == "__main__":
+    settings = load_settings()
+    lang = settings.get("lang", "id")
+    t = TRANSLATIONS.get(lang, TRANSLATIONS["id"])
     try:
         main_loop()
     except KeyboardInterrupt:
-        print("\n" + color_text("Bye.", Colors.GREEN))
+        print("\n" + color_text(t.get("quit_msg", "Sampai jumpa!"), Colors.GREEN))
         try:
             sys.exit(0)
         except SystemExit:
